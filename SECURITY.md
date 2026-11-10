@@ -8,6 +8,8 @@ Please do not open a public issue for a security problem.
 
 Use GitHub's private reporting on the affected repository: open the repository, go to **Security**, then **Report a vulnerability**. This reaches the maintainers privately.
 
+You can also email **security@kelpgate.cloud**. Please keep exploit details to what is needed to reproduce the issue, and do not attach live malware.
+
 Include what you can:
 
 - the repository and version (plugin, module or package version, plus WordPress, Drupal or Node version)
