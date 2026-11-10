@@ -11,3 +11,5 @@ Malware scanning for the files your application accepts. One API call checks an 
 Get started at [kelpgate.cloud](https://kelpgate.cloud) or open the [console](https://console.kelpgate.cloud).
 
 The integrations and clients here are open source under GPL-2.0-or-later. The Kelpgate scanning service they connect to is a hosted commercial product and is not open source. See the [contributing guide](https://github.com/JustBots-Labs/.github/blob/main/CONTRIBUTING.md), the [security policy](https://github.com/JustBots-Labs/.github/blob/main/SECURITY.md) and [how to get help](https://github.com/JustBots-Labs/.github/blob/main/SUPPORT.md).
+
+Support: support@kelpgate.cloud · Security: security@kelpgate.cloud · Privacy: privacy@kelpgate.cloud
