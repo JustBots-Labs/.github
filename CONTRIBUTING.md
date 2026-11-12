@@ -25,7 +25,7 @@ Write a short imperative subject ("Fix token refresh on 401"), with detail in th
 
 ## License
 
-Contributions are accepted under the license of the repository you contribute to, which for our projects is GPL-2.0-or-later. You keep your copyright.
+Contributions are accepted under the license of the repository you contribute to: MIT for the Node.js, Python and PHP clients, and GPL-2.0-or-later for the WordPress plugin and the Drupal module (WordPress.org and Drupal.org require the GPL). You keep your copyright.
 
 ## Conduct
 
