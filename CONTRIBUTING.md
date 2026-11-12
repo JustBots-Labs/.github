@@ -30,3 +30,5 @@ Contributions are accepted under the license of the repository you contribute to
 ## Conduct
 
 Everyone taking part is expected to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+New clients, plugins and modules, and changes to existing ones, follow the [Kelpgate client standard](docs/client-standard.md): the same operation, error and setting names in every language.
