@@ -32,7 +32,7 @@ We fix security issues in the latest release of each project. Older releases are
 
 ## Scope
 
-In scope: the Kelpgate WordPress plugin, the Drupal module, the Node client (`@kelpgate/client`) and the code in this organisation's repositories.
+In scope: the Kelpgate WordPress plugin, the Drupal module, the Node client (`@kelpgate/client`) and the code in this organization's repositories.
 
 For the hosted Kelpgate service (API, console), report through the same private channel and mark the report as service-related.
 

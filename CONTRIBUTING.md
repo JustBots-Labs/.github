@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping. This guide applies to every repository in the Kelpgate organisation unless a repository says otherwise.
+Thanks for helping. This guide applies to every repository in the Kelpgate organization unless a repository says otherwise.
 
 ## Ways to contribute
 
@@ -13,7 +13,7 @@ Thanks for helping. This guide applies to every repository in the Kelpgate organ
 
 1. Fork the repository and branch from `main`.
 2. Keep the change focused. One concern per pull request.
-3. Add or update tests when behaviour changes, and update the README or changelog when users would notice.
+3. Add or update tests when behavior changes, and update the README or changelog when users would notice.
 4. Make sure checks pass locally and in CI.
 5. Describe what changed and why, and link the issue.
 
@@ -21,11 +21,11 @@ A maintainer reviews every pull request. We may ask for changes or decline a cha
 
 ## Commits
 
-Write a short imperative subject ("Fix token refresh on 401"), with detail in the body when it helps. Sign your work with a `Signed-off-by` line (`git commit -s`) to confirm you have the right to submit it under the project's licence (the [Developer Certificate of Origin](https://developercertificate.org/)).
+Write a short imperative subject ("Fix token refresh on 401"), with detail in the body when it helps. Sign your work with a `Signed-off-by` line (`git commit -s`) to confirm you have the right to submit it under the project's license (the [Developer Certificate of Origin](https://developercertificate.org/)).
 
-## Licence
+## License
 
-Contributions are accepted under the licence of the repository you contribute to, which for our projects is GPL-2.0-or-later. You keep your copyright.
+Contributions are accepted under the license of the repository you contribute to, which for our projects is GPL-2.0-or-later. You keep your copyright.
 
 ## Conduct
 

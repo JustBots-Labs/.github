@@ -4,9 +4,10 @@ Malware scanning for the files your application accepts. One API call checks an 
 
 | Project | What it is |
 | --- | --- |
-| [kelpgate-wordpress-plugin](https://github.com/KelpGate/kelpgate-wordpress-plugin) | Scans WordPress uploads and blocks infected files |
-| [kelpgate-drupal-module](https://github.com/KelpGate/kelpgate-drupal-module) | Scans Drupal uploads through file validation |
-| [kelpgate-node](https://github.com/KelpGate/kelpgate-node) | Node.js client, CLI and Express middleware (`@kelpgate/client`) |
+| [kelpgate-wordpress](https://github.com/KelpGate/kelpgate-wordpress) | Kelpgate Malware Scanner for WordPress: scans uploads and blocks infected files |
+| [kelpgate-drupal](https://github.com/KelpGate/kelpgate-drupal) | Kelpgate Malware Scanner for Drupal: scans uploads through file validation |
+| [kelpgate-node](https://github.com/KelpGate/kelpgate-node) | Kelpgate Client for Node.js (`@kelpgate/client`): library, CLI and Express middleware |
+| [kelpgate-python](https://github.com/KelpGate/kelpgate-python) | Kelpgate Client for Python (`kelpgate-client`): sync and async library, CLI, FastAPI and Django helpers |
 
 Get started at [kelpgate.cloud](https://kelpgate.cloud) or open the [console](https://console.kelpgate.cloud).
 
