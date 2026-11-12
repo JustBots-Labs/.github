@@ -42,5 +42,5 @@ The same rules apply to every Kelpgate repository.
 - **CI runs on every pull request**: tests on every supported language version, lint and static analysis, CodeQL where the language is supported, and a dependency review. Actions are pinned by commit SHA.
 - **Dependabot** opens one grouped pull request per ecosystem each week. Read the diff, let CI run, and merge it like any other change.
 - **Secrets**: secret scanning and push protection are on. Never commit credentials; use environment variables or the repository's secrets.
-- **Releases** are tags named `vX.Y.Z` that match the version in the package. Pushing the tag publishes it (npm and PyPI use trusted publishing with provenance, no stored tokens). Every release has a changelog entry, and the version follows [Semantic Versioning](https://semver.org).
+- **Releases** are tags named `vX.Y.Z` that match the version in the package. Pushing the tag publishes it, and the release workflow refuses a tag whose version or changelog entry is missing. Every release gets a GitHub Release built from its changelog entry. The full policy is in [versioning and releases](docs/versioning-and-releases.md).
 - **Security issues** go to the private channel in [SECURITY.md](SECURITY.md), not to a public issue.
