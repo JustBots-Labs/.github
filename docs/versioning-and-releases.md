@@ -27,8 +27,8 @@ covers version numbers, where each package is published, and how a release is ma
 | PHP client `kelpgate/kelpgate-php` | [kelpgate-php](https://github.com/KelpGate/kelpgate-php) | Packagist | Tag `v*`; Packagist reads the tag through its GitHub hook |
 | WordPress plugin | [kelpgate-wordpress](https://github.com/KelpGate/kelpgate-wordpress) | WordPress.org | Tag `v*` builds the zip and a GitHub Release; the directory copy is updated through WordPress.org after review |
 | Drupal module | [kelpgate-drupal](https://github.com/KelpGate/kelpgate-drupal) | Drupal.org | Released from the Drupal.org project page |
-| API service | [kelpgate](https://github.com/KelpGate/kelpgate) (private) | ghcr.io image | Every merge to `main` builds and deploys; a tag names a release |
-| Console | [kelpgate-console](https://github.com/KelpGate/kelpgate-console) (private) | ghcr.io image | Same as the service |
+| API service | `KelpGate/kelpgate` (private) | ghcr.io image | Every merge to `main` builds and deploys; a tag names a release |
+| Console | `KelpGate/kelpgate-console` (private) | ghcr.io image | Same as the service |
 
 Current versions are shown by the badges in the [organization profile](../profile/README.md) and in each README,
 not copied into documents that would go stale.
