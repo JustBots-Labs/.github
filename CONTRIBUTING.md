@@ -32,3 +32,15 @@ Contributions are accepted under the license of the repository you contribute to
 Everyone taking part is expected to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 New clients, plugins and modules, and changes to existing ones, follow the [Kelpgate client standard](docs/client-standard.md): the same operation, error and setting names in every language.
+
+## Branches, pull requests and releases
+
+The same rules apply to every Kelpgate repository.
+
+- **`main` is protected.** No force pushes, no deletion, linear history. Changes arrive through a pull request, and a pull request merges only when CI is green and the branch is up to date.
+- **One change per branch**, named `feat/...`, `fix/...`, `chore/...`, `docs/...` or `ci/...`, and squash-merged with the pull request title as the commit message. The branch is deleted after the merge.
+- **CI runs on every pull request**: tests on every supported language version, lint and static analysis, CodeQL where the language is supported, and a dependency review. Actions are pinned by commit SHA.
+- **Dependabot** opens one grouped pull request per ecosystem each week. Read the diff, let CI run, and merge it like any other change.
+- **Secrets**: secret scanning and push protection are on. Never commit credentials; use environment variables or the repository's secrets.
+- **Releases** are tags named `vX.Y.Z` that match the version in the package. Pushing the tag publishes it (npm and PyPI use trusted publishing with provenance, no stored tokens). Every release has a changelog entry, and the version follows [Semantic Versioning](https://semver.org).
+- **Security issues** go to the private channel in [SECURITY.md](SECURITY.md), not to a public issue.
