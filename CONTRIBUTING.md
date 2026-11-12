@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping. This guide applies to every repository in the JustBots Labs organisation unless a repository says otherwise.
+Thanks for helping. This guide applies to every repository in the Kelpgate organisation unless a repository says otherwise.
 
 ## Ways to contribute
 
