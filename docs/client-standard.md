@@ -79,8 +79,32 @@ Errors carry `code`, `status`, `requestId` and the decoded response `body`. PHP 
 Behavior every client shares:
 - the token is cached and renewed 120 seconds before it expires, and a 401 triggers one fresh token and one retry;
 - network errors, 429, 502, 503 and 504 are retried with exponential backoff, and `Retry-After` is honored up to 30 seconds;
+- every scan sends an `Idempotency-Key`, the same one on each retry of a call (see Idempotency);
 - `apiUrl` and `tokenUrl` must use https (plain http only for localhost), and redirects are never followed;
 - the `User-Agent` is `kelpgate-<language>/<version>`, and credentials never appear in logs or `var_dump`-style output.
+
+## Idempotency
+
+A retry must never be charged twice. Every scan sends an `Idempotency-Key` header, and the service counts
+a request with the same key, method, path and size only once.
+
+| | |
+|---|---|
+| Option | `idempotencyKey` (Node, PHP) or `idempotency_key` (Python), optional, on every scan operation: `scanFile`, `scanBytes`, `scanUrl`, `scanFileAsync`, `scanUrlAsync` |
+| Default | the client generates a random key (UUID v4) for each call and sends the **same key on every retry of that call**, including the retry after a 401 |
+| Plugins | the WordPress plugin and the Drupal module generate one key per scan automatically; there is no setting |
+| Format | 1 to 128 characters from `A-Za-z0-9._:-`; anything else is a `ConfigError` before any request is made |
+| Not sent | `getAsyncResult`, `waitForResult`, `health` and the token request: they are not counted |
+
+What the service does with it:
+- a repeat of the same request under the same key is not counted again, up to two repeats within 24 hours;
+- the key is bound to the file: the same key on a **different file** is counted as a new scan, so a key cannot
+  be used to scan for free, and a third repeat is counted too;
+- a scan that fails on the service side (5xx, 413, 422) is refunded and its key is cleared, so the retry is
+  counted once.
+
+Pass your own key only to make your own retries safe, for example a job or upload id. Never reuse one key
+for different uploads. Servers that do not know the header ignore it.
 
 ## Environment variables
 
